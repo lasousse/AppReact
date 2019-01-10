@@ -1,28 +1,25 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Matrice from './components/coin-table'
+import data from './data/coins.json'
+  class App extends React.Component{
 
-class App extends Component {
+    constructor(props){
+      super(props)
+      this.state ={
+        data: data
+      }
+    }
+  
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+  return (
+    <div 
+    className="page-container"
+    >
+<Matrice data={this.state.data} />
+</div>
+  )
   }
 }
-
-export default App;
+export default App
