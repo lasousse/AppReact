@@ -1,0 +1,24 @@
+ [
+    {
+        "id": 1,
+        "name": "Nathalie",
+        "liendeparenté":"Epouse",
+        "age":36,
+        "documents":"acte de mariage"
+    },
+    {
+        "id": 2,
+        "name": "Amélie",
+        "liendeparenté":"Fille",
+        "age":5,
+        "documents":"acte de naissance"
+    },
+    {
+        "id": 3,
+        "name": "Alex",
+        "liendeparenté":"Fils",
+        "age":7,
+        "documents":"acte de naissance"
+    }
+]
+    
